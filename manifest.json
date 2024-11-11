@@ -1,0 +1,25 @@
+{
+    "name": "Plaza Vea Scraper",
+    "description": "Scraper para productos de Plaza Vea",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+      {
+        "matches": ["https://www.plazavea.com.pe/*"],
+        "js": ["./app.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "./index.html",
+      "default_icon": {
+        "32": "./Image/32.png",
+        "48": "./Image/48.png"
+      }
+    },
+    "permissions": ["activeTab", "scripting"],
+    "icons": {
+      "32": "./Image/32.png",
+      "48": "./Image/48.png"
+    }
+  }
+  
